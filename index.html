@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Administration</title>
+        <script defer src="/elements/index.js"></script>
+        <link rel="stylesheet" href="/elements/index.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Administration</h1>
+        </header>
+        <main>
+            <section>
+                <span>Product</span>
+                <form>
+                    <input
+                        type="text"
+                        name="item-details"
+                        placeholder="Product name..."
+                        id="search-product"
+                    />
+                    <button>New product</button>
+                </form>
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article Nr.</th>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <template>
+                <tr>
+                    <td class="article-number"></td>
+                    <td class="name"></td>
+                    <td class="description"></td>
+                    <td class="price"></td>
+                </tr>
+            </template>
+        </main>
+    </body>
+</html>

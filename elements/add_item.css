@@ -1,0 +1,31 @@
+form {
+    width: 400px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding-left: 0;
+}
+
+form fieldset label {
+    padding-bottom: 10px;
+}
+
+form fieldset input {
+    height: 20px;
+}
+
+form fieldset input#article-number {
+    width: 40%;
+}
+
+form fieldset input#price {
+    width: 50%;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 2px 20px;
+}

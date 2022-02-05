@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+main {
+    padding: 0 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section span {
+    font-size: 25px;
+}
+
+section form input {
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+table thead tr:first-child {
+    background-color: rgb(223, 219, 219);
+}
+
+table th,
+table td {
+    padding: 10px;
+}
+
+table th {
+    text-align: start;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table td + td,
+table th + th {
+    border-left: 1px solid #000;
+}

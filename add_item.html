@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Item</title>
+        <link rel="stylesheet" href="/elements/add_item.css" />
+        <script defer src="/elements/add_item.js" type="module"></script>
+        <!-- defer it's used because we want to call the js after the 
+            DOM Content ( HTML ) is loaded -->
+    </head>
+    <body>
+        <header>
+            <h1>Administration</h1>
+            <h3>New product</h3>
+        </header>
+        <form>
+            <fieldset>
+                <label for="product-name">Product name</label>
+                <input name="product-name" placeholder="Add product name..." />
+            </fieldset>
+            <fieldset>
+                <label for="article-number">Article number</label>
+                <input
+                    id="article-number"
+                    name="article-number"
+                    placeholder="Add article number..."
+                />
+            </fieldset>
+            <fieldset>
+                <label for="description">Description</label>
+                <textarea
+                    rows="6"
+                    name="description"
+                    placeholder="Add description..."
+                ></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" value="0" />
+            </fieldset>
+            <fieldset>
+                <label for="image-url">Image URL</label>
+                <input
+                    type="text"
+                    name="image-url"
+                    placeholder="Add image url..."
+                />
+            </fieldset>
+            <button type="submit">Add</button>
+        </form>
+    </body>
+</html>
